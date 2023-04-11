@@ -1,3 +1,8 @@
+# Bluetooth
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+persist.vendor.bt.a2dp.hal.implementation=true
+
 # Camera
 camera.disable_zsl_mode=true
 
@@ -35,10 +40,6 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
-# IOP
-vendor.iop.enable_prefetch_ofr=1
-vendor.iop.enable_uxe=0
-
 # LMK properties
 ro.lmk.use_minfree_levels=true
 ro.lmk.kill_heaviest_task=true
@@ -75,3 +76,8 @@ debug.cpurend.vsync=false
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+
+# Radio VoNR
+persist.radio.is_vonr_enabled_0=true
+persist.radio.is_vonr_enabled_1=true
+persist.vendor.vonr_setting_support=1
