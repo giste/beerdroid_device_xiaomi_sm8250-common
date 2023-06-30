@@ -271,6 +271,8 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libvulkan \
     vendor.display.config@1.5 \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
@@ -361,6 +363,10 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
+	
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
