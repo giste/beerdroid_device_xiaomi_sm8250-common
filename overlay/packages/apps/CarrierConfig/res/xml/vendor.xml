@@ -3013,7 +3013,17 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_5g_switch_available_bool" value="true"/>
         <boolean name="config_support_change_and_cancel_cb" value="false"/>
     </carrier_config>
+    <!-- Lifecell Ukraine Configurations -->
     <carrier_config mcc="255" mnc="6">
+        <!-- Flag specifying whether VoLTE should be available for carrier, independent of carrier provisioning. -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of carrier provisioning. -->
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <!-- Flag specifying whether video telephony is available for carrier. -->
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <!-- Default WFC_IMS_enabled: true VoWiFi by default is on -->
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <!-- Default mode for WFC over IMS on home network: 2: prefer Wi-Fi -->
         <int name="carrier_default_wfc_ims_mode_int" value="2"/>
     </carrier_config>
     <carrier_config mcc="238" mnc="6">
@@ -6778,5 +6788,20 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int-array name="carrier_nr_availabilities_int_array" num="1"> 
             <item value="2" /> 
         </int-array>
+    </carrier_config>
+
+    <!--斯里兰卡 Srilanka Dialog-->
+    <carrier_config mcc="413" mnc="01">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
+    </carrier_config>
+    <!--斯里兰卡 Srilanka Mobitel-->
+    <carrier_config mcc="413" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_wfc_supports_ims_preferred_bool" value="true" />
     </carrier_config>
 </carrier_config_list>
